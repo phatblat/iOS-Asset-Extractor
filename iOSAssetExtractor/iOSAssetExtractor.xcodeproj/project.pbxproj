@@ -113,7 +113,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "cp \"${TARGET_BUILD_DIR}/${TARGET_NAME}\" \"${PROJECT_DIR}/../Products/${TARGET_NAME}\"";
+			shellScript = "cp -v \"${TARGET_BUILD_DIR}/${TARGET_NAME}\" \"${PROJECT_DIR}/../Products/${TARGET_NAME}\"";
 		};
 /* End PBXShellScriptBuildPhase section */
 
@@ -206,6 +206,9 @@
 		CA7B545C19FF3C5E0019A015 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				DEPLOYMENT_LOCATION = YES;
+				DSTROOT = /;
+				INSTALL_PATH = $HOME/bin;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Debug;
@@ -213,6 +216,9 @@
 		CA7B545D19FF3C5E0019A015 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				DEPLOYMENT_LOCATION = YES;
+				DSTROOT = /;
+				INSTALL_PATH = $HOME/bin;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Release;
@@ -236,6 +242,7 @@
 				CA7B545D19FF3C5E0019A015 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
